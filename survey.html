@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="stylesheet"
+      href="style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+​
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+​
+    <title>Survey Form</title>
+  </head>
+  <body>
+      
+    <div class="container">
+      <header class="header">
+        <!-- User Story #1  -->
+        <h1 id="title">McDonald's Survery Form</h1>
+​
+        <!-- User Story #2  -->
+        <p id="description">
+          Thank you for choosing McDonald's. Please fill out your survey.
+        </p>
+      </header>
+​
+      <!-- User Story #3: I can see a form with id="survey-form".  -->
+      <form id="survey-form">
+        <!-- User Story #4: Inside the form element, I am required to enter my name in a field with id="name". -->
+        <div class="form-group">
+          <label id="name-label" for="name">Name: </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter name here"
+            required
+          />
+        </div>
+        <!-- User Story #5: Inside the form element, I am required to enter an email in a field with id="email". -->
+​
+        <!-- User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
+        <div class="form-group">
+          <label id="email-label" for="email">Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="youremail@email.com"
+            required
+          />
+        </div>
+        <!-- User Story #7: Inside the form, I can enter a number in a field with id="number". -->
+​
+        <!-- User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error. -->
+​
+        <!-- User Story #9: If I enter numbers outside the range of the number input, 
+            which are defined by the min and max attributes, I will see an HTML5 validation error.  -->
+        <div class="form-group">
+          <label id="number-label" for="number">Age: </label>
+          <input
+            type="age"
+            name="age"
+            id="age"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+​
+        <div class="form-group">
+          <!-- User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".  -->
+          <p>What was your favorite part about your experience?</p>
+​
+          <select id="dropdown" name="fav" class="form-control" required>
+            <option value="staff">Staff</option>
+            <option value="food">Food</option>
+          </select>
+        </div>
+​
+        <!-- User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
+​
+        <!-- User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.   -->
+        <div class="form-group">
+            <p>Would you recommend McDonald's to a friend?</p>
+            <label>
+                <input
+                    name="user-recommend"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                >
+                Definitely
+            </label>
+            <label>
+                <input
+                    name="user-recommend"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"
+                >
+                Maybe
+            </label>
+            <label>
+                <input
+                    name="user-recommend"
+                    value="no"
+                    type="radio"
+                    class="input-radio"
+                >
+                No
+            </label>
+        </div>
+      </form>
+    </div>
+​
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script
+  </body>
+</html>
+​
+
+
+
